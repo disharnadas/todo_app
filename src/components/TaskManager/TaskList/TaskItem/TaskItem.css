@@ -3,11 +3,7 @@
     padding: 1rem;
   }
 
-  .container {
-    display:flex;
-    gap: 20px;
-    
-  }
+
 
   .item_label{
     color: red;

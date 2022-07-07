@@ -14,7 +14,7 @@ const TaskItem = props => {
 
     return (
         <ListGroupItem>
-            <div class="container">
+            <div>
                 <div class="item"><div class = "item_label">Title:</div> {task.title}</div>
                 <div class="item"><div class="item_label">Description:</div> {task.description}</div>
 
