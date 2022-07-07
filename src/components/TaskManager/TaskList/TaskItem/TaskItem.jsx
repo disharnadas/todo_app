@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { ListGroupItem, Button } from 'reactstrap'
+import './TaskItem.css'
 
 import { deleteTaskAction } from '../../../../actions/taskActions'
 
@@ -13,7 +14,13 @@ const TaskItem = props => {
 
     return (
         <ListGroupItem>
-            {task.title}
+            <div class="container">
+                <div class="item"><div class = "item_label">Title:</div> {task.title}</div>
+                <div class="item"><div class="item_label">Description:</div> {task.description}</div>
+
+            </div>
+           
+            
             <Button close onClick={handleDelete} />
         </ListGroupItem>
     )
